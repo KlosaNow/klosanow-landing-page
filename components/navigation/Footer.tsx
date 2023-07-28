@@ -8,26 +8,9 @@ import Linkedin from "public/LinkedIn.png"
 import Twitter from "public/Twitter.png"
 import Instagram from "public/Instagram.png"
 import styles from "./footer.module.scss";
+import { authFooter, navFooter, SocialBtnProps } from '@/utils'
 
 
-const navFooter = [
-    { title: "Home", href: "#" },
-    { title: "About Us", href: "#" },
-    { title: "Contact Us", href: "#" },
-
-]
-const authFooter = [
-    { title: "Login", href: "#" },
-    { title: "Create Account", href: "#" },
-    { title: "Reset Password", href: "#" },
-
-]
-interface SocialBtnProps {
-    children: ReactNode,
-    label: string,
-    href: string,
-
-}
 
 const SocialBtns = ({ children, label, href }: SocialBtnProps) => {
     return (

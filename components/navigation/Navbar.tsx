@@ -11,19 +11,8 @@ import {
 import Image from 'next/image'
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Logo from "public/logo.png"
+import { Links, NavLinkProps } from '@/utils';
 
-
-const Links = [
-    { title: "Home", href: "/" },
-    { title: "About Us", href: "#" },
-    { title: "Contact", href: "#" },
-]
-
-interface NavLinkProps {
-    children: ReactNode,
-    href: string,
-    onClose?: () => void,
-}
 
 const NavLink = ({ children, href, onClose }: NavLinkProps) => {
     return (
