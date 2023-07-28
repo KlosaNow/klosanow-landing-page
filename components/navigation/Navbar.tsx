@@ -32,7 +32,7 @@ const NavLink = ({ children, href, onClose }: NavLinkProps) => {
         </Link>
     )
 }
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (

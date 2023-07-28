@@ -1,0 +1,32 @@
+.footer_ul {
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      :first-child {
+        // font-size: 1.2em;
+        font-weight: 500;
+        // margin-bottom: 20px;
+        color: #2A2A2A;
+      }
+  
+      li:not(:first-child):hover {
+        color: #523BA3;
+      }
+    }
+        a:hover {
+          color: #523BA3;
+    
+        }
+  
+    // h2 {
+    //   margin-top: -20px;
+    //   font-size: 1.7em;
+    // }
+    // p {
+    //   margin-top: -10px;
+    //   font-size: 0.8em;
+    // }
+  }
