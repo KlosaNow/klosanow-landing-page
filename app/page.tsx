@@ -1,10 +1,11 @@
 'use client'
-import { Hero } from "@/components/sections"
+import { Hero, Features } from "@/components/sections"
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Features />
     </>
   )
 }

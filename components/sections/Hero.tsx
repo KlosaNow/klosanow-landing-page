@@ -1,10 +1,9 @@
 import React from 'react'
 import { Box, Button, Flex, Heading, Stack, Text, Image } from '@chakra-ui/react'
 import Link from 'next/link'
-// import Image from 'next/image'
-import hero from "public/hero.png"
 
-export default function Hero() {
+
+export default function Hero(): JSX.Element {
     return (
         <Box mt={{ md: '8rem', lg: '8rem' }} height='100vh'>
             <Stack direction={{ base: 'column', md: 'row', lg: 'row' }}
@@ -31,13 +30,11 @@ export default function Hero() {
                     alignItems={'center'}
                     justify={'center'}
                     mt={{ md: '2rem', lg: '2rem' }}
-
                 >
                     <Stack spacing={6} w={'full'} maxW={'lg'}>
 
                         <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
                             textAlign={{ base: 'center', md: 'center', lg: 'justify' }}
-
                         >
                             <Text as='span'
                                 fontSize='lg'
@@ -71,7 +68,6 @@ export default function Hero() {
                                 _hover={{
                                     opacity: .8,
                                 }}
-
                             >
                                 <Link href='#'>
                                     Get Started
@@ -119,13 +115,11 @@ export default function Hero() {
                         borderStyle={'solid'}
                         borderRadius='50%'
                         right={{ base: '-65%', md: '-40%', lg: '-40%' }}
-                        zIndex={'2'}
+                        zIndex={'1'}
                     >
                     </Box>
                 </Flex>
-
             </Stack>
-
         </Box >
     )
 }
