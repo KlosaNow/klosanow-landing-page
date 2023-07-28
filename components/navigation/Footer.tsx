@@ -33,7 +33,6 @@ const SocialBtns = ({ children, label, href }: SocialBtnProps) => {
     )
 }
 
-
 export default function Footer(): JSX.Element {
 
     return (
@@ -46,7 +45,6 @@ export default function Footer(): JSX.Element {
                         spacing={{ base: '8', md: '20', lg: '20' }} px={10} pl={{ base: '25px', md: '60px' }}
                         mb='20px'
                         className={styles.footer_ul}
-
                     >
                         <Box>
                             <Image src={Logo} alt='logo' />
@@ -56,7 +54,6 @@ export default function Footer(): JSX.Element {
                             <Box mt='3rem'>
                                 <Text color='black.40' fontSize='lg'>© {new Date().getFullYear()} All rights reserved </Text>
                             </Box>
-
                         </Box>
                         <Box>
                             <Text color='black.40' fontSize='lg'>Quick Links</Text>
