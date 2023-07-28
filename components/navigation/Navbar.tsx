@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useState, useEffect } from 'react'
 import {
     Box,
     Flex, HStack,
@@ -33,14 +33,38 @@ const NavLink = ({ children, href, onClose }: NavLinkProps) => {
     )
 }
 export default function Navbar(): JSX.Element {
+    // toggle drawer on mobile
     const { isOpen, onOpen, onClose } = useDisclosure();
+
+    // detect user scroll 
+    const [navScrollShadow, setnavScrollShadow] = useState<boolean>(false)
+
+    function handleScroll() {
+        const screenY = window.screenY;
+        setnavScrollShadow(screenY >= 90 ? true : false)
+    }
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll)
+        // clean up
+        return () => {
+            setnavScrollShadow(false)
+        }
+    }, [])
+
 
     return (
         <>
-            <Box bg='neutral.50' py='.4rem' px={{ base: '1rem', md: '6rem' }}
-                border={'0.3px solid rgba(0, 0, 0, 0.20)'}
-                shadow={'sm'}
-            >
+            <Box bg='neutral.50'
+                py='.4rem'
+                px={{ base: '1rem', md: '6rem' }}
+                zIndex={'200'}
+                top={0}
+                w="100%"
+                position="fixed"
+                borderBottom={1}
+                borderStyle={'solid'}
+                borderColor={'gray.200'}
+                boxShadow={navScrollShadow ? 'sm' : ''}>
 
                 <Flex h={16} alignItems='center' justifyContent='space-between'>
                     <IconButton

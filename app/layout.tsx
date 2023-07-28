@@ -2,6 +2,7 @@
 import { Providers } from './providers'
 import './globals.css'
 import { Footer, Navbar } from '@/components/navigation'
+import { Box } from '@chakra-ui/react'
 
 
 export default function RootLayout({
@@ -15,7 +16,9 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
+          <Box mt={20}> 
           {children}
+          </Box>
           <Footer />
         </Providers>
       </body>
