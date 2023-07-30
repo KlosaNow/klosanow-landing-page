@@ -3,7 +3,7 @@ import { Box, Button, Heading, Input, InputGroup, InputRightElement, Text } from
 export default function Connect() {
     return (
         <>
-            <Box mt={{ md: '8rem', lg: '12rem' }} height='100%'
+            <Box mt={{ base: '4rem', md: '8rem', lg: '12rem' }} height='100%'
             >
                 <Box
                     mt='3rem'

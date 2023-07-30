@@ -20,7 +20,7 @@ export default function Hero(): JSX.Element {
                     borderStyle={'solid'}
                     borderRadius='50%'
                     top={{ base: '-65%', md: '-40%', lg: '-40%' }}
-                    zIndex={'2'} 
+                    zIndex={'1'} 
                 >
                 </Box>
 

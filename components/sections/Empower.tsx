@@ -4,7 +4,7 @@ import { Box, Flex, Heading, Stack, Text, Image } from '@chakra-ui/react'
 export default function Empower() {
     return (
         <>
-            <Box mt={{ md: '8rem', lg: '12rem' }}>
+            <Box mt={{ base: '4rem', md: '8rem', lg: '12rem' }}>
                 <Stack direction={{ base: 'column', md: 'row', lg: 'row' }}
                     px={{ base: '1rem', md: '6rem' }}
                     position='relative' >

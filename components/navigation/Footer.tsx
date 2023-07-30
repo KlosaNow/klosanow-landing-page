@@ -37,7 +37,7 @@ export default function Footer(): JSX.Element {
 
     return (
         <>
-            <Box as='footer' h='50%' mt='12rem' bgColor='primary.5'
+            <Box as='footer' h='50%' bgColor='primary.5'
                 px={{ base: '1rem', md: '6rem' }} >
                 <Box pt='4rem' py='4rem'>
                     <SimpleGrid
