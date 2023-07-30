@@ -10,8 +10,6 @@ import Instagram from "public/Instagram.png"
 import styles from "./footer.module.scss";
 import { authFooter, navFooter, SocialBtnProps } from '@/utils'
 
-
-
 const SocialBtns = ({ children, label, href }: SocialBtnProps) => {
     return (
         <chakra.button

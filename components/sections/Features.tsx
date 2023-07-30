@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Heading, Text } from "@chakra-ui/react"
-// import pana from "../../public/features/pana.png"
 import { features } from '@/utils'
 import Image from 'next/image'
 
