@@ -2,14 +2,14 @@ import { ReactNode } from "react";
 
 export const Links = [
   { title: "Home", href: "/" },
-  { title: "About Us", href: "#" },
-  { title: "Contact", href: "#" },
+  { title: "About Us", href: "/about" },
+  { title: "Contact", href: "/contact" },
 ];
 
 export const navFooter = [
-  { title: "Home", href: "#" },
-  { title: "About Us", href: "#" },
-  { title: "Contact Us", href: "#" },
+  { title: "Home", href: "/" },
+  { title: "About Us", href: "/about" },
+  { title: "Contact Us", href: "/contact" },
 ];
 
 export const authFooter = [
