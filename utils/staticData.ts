@@ -29,3 +29,18 @@ export interface SocialBtnProps {
   label: string;
   href: string;
 }
+
+export const features = [
+  {
+    src: "/features/pana.png",
+    desc: "Tutors create a video lesson, by verbally explaining the visuals lesson slides while screen recording",
+  },
+  {
+    src: "/features/cuate.png",
+    desc: "Learners access the video lessons by watching online (On mobile or web) or downloading for offline access",
+  },
+  {
+    src: "/features/amico.png",
+    desc: "Tutors and learners stay connected 24/7 through the messaging feature in our platform (Web and mobile",
+  },
+];

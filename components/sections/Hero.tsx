@@ -107,7 +107,7 @@ export default function Hero(): JSX.Element {
                         as='div'
                         position='absolute'
                         display={{ base: 'none', md: 'block', lg: 'block' }}
-                        top={{ md: '40%', lg: '40.5%' }}
+                        top={{ md: '40%', lg: '50.5%' }}
                         width='572px'
                         height='572px'
                         border={1}

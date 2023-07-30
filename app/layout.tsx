@@ -16,9 +16,11 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
+
           <Box mt={20}> 
           {children}
           </Box>
+
           <Footer />
         </Providers>
       </body>

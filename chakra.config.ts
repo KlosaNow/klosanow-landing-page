@@ -63,7 +63,7 @@ const theme = extendTheme({
       50: "#FFFFFF",
       40: "#FAFAFA",
       30: "#FFFFFF",
-      20: "#FFFFFF",
+      20: "#525256",
       10: "#FFFFFF",
       5: "#FFFFFF",
     },
