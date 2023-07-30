@@ -20,13 +20,10 @@ export default function Empower() {
                             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
                                 textAlign={{ base: 'center', md: 'center', lg: 'justify' }}
                             >
-
-
                                 <Text color={'primary.100'} fontWeight={700}>Empowering</Text>
                                 <Text color={'primary.100'} fontWeight={700}>Learners and Tutors</Text>
                                 <Text color={'primary.100'} fontWeight={700}>Through Online</Text>
                                 <Text color={'primary.100'} fontWeight={700}>Education</Text>
-
                             </Heading>
                             <Text color={'black.100'}
                                 fontSize={{ base: 'md', md: 'lg', lg: 'lg' }}
@@ -34,7 +31,6 @@ export default function Empower() {
                                 Our online teaching and learning platform is both effective and efficient,
                                 enabling learners access learning contents created by tutors seamlessly
                             </Text>
-
                         </Stack>
                     </Flex>
                     <Box as='div'

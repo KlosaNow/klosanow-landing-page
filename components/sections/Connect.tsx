@@ -1,0 +1,62 @@
+import React from 'react'
+import { Box, Button, Heading, Input, InputGroup, InputRightElement, Text } from '@chakra-ui/react'
+export default function Connect() {
+    return (
+        <>
+            <Box mt={{ md: '8rem', lg: '12rem' }} height='100%'
+            >
+                <Box
+                    mt='3rem'
+                    bgImage="url('/connect.png')"
+                    bgPosition='center'
+                    bgSize='cover'
+                    bgRepeat='no-repeat'
+                    py='8rem'
+                    display='flex'
+                    flexDirection={{ base: 'column', md: 'column', lg: 'column' }}
+                    justifyContent={'center'}
+                    alignItems={'center'}
+                    px='1rem'
+                >
+                    <Text color='neutral.30'>Let’s Connect</Text>
+                    <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+                        color='neutral.30' mt='2rem'
+                    >
+                        <Text textAlign='center'>Stay Connected with Our Newsletter</Text>
+                        <Text textAlign='center'>for the Latest Updates</Text>
+
+                    </Heading>
+                    <Box bg={'neutral.30'} py='2rem' mt='2rem'
+                        width={{ base: '100%', md: '715.559px', lg: '715.559px' }}
+                        borderRadius='20px'
+                        px='3rem'
+                    >
+                        <InputGroup size='lg'>
+                            <Input
+                                pr='4.5rem'
+                                type='email'
+                                placeholder='Your Email Address'
+                                variant='unstyled'
+                            />
+                            <InputRightElement width='4.5rem'>
+                                <Button
+                                    top='-10px'
+                                    size='lg'
+                                    bg='primary.50' color='neutral.50'
+                                    px='4rem'
+                                    borderRadius='10px'
+                                    _hover={{
+                                        opacity: .8,
+                                    }}
+                                >
+                                    Subscribe
+                                </Button>
+
+                            </InputRightElement>
+                        </InputGroup>
+                    </Box>
+                </Box>
+            </Box>
+        </>
+    )
+}

@@ -1,5 +1,5 @@
 'use client'
-import { Hero, Features, Empower } from "@/components/sections"
+import { Hero, Features, Empower, Connect } from "@/components/sections"
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Empower />
+      <Connect />
     </>
   )
 }
