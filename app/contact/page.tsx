@@ -1,17 +1,15 @@
 "use client"
 
 import React from 'react'
-import { useFormik } from "formik";
 import { Box, Heading, Text, Image } from '@chakra-ui/react'
 import ContactForm from '@/components/contact';
 
-export default function ContactPage() {
 
+export default function ContactPage() {
     return (
         <>
             <Box mt={{ base: '1rem', md: '6rem', lg: '6rem' }}
                 px={{ base: '1rem', md: '6rem' }} py='6rem'  >
-
                 <Box bgColor={'neutral.40'}
                     p='4rem'
                     borderRadius='20px'
@@ -51,7 +49,7 @@ export default function ContactPage() {
                         <Box display={{ base: 'none', md: 'block', lg: 'block' }}>
                             <Image
                                 loading='lazy'
-                                src="/contact.png"
+                                src="../../asset/general/contact.png"
                                 alt='connect-img'
                             />
                         </Box>

@@ -96,7 +96,7 @@ export default function Hero(): JSX.Element {
                 <Flex flex={1} position='relative'>
                     <Image
                         loading='lazy'
-                        src="/hero.png"
+                        src="../../assets/general/hero.png"
                         alt='hero-img'
                         position='absolute'
                         zIndex={10}

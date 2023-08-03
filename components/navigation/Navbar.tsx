@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image'
 import { HamburgerIcon } from '@chakra-ui/icons';
-import Logo from "public/logo.png"
+import Logo from "@/asset/general/logo.png"
 import { Links, NavLinkProps } from '@/utils';
 
 

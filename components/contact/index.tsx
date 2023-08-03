@@ -114,18 +114,3 @@ export default function ContactForm() {
     </>
   );
 }
-
-
-
-{/* <Box display="flex" justifyContent="center">
-<Button
-  width="100%"
-  p="1.5rem"
-  color="neutral.50"
-  bgColor="primary.50"
-  type="submit"
-  disabled={!(formik.dirty && formik.isValid)}
->
-  Sign up
-</Button>
-</Box> */}
