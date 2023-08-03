@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import * as yup from "yup";
 
 export const Links = [
   { title: "Home", href: "/" },
@@ -44,3 +45,9 @@ export const features = [
     desc: "Tutors and learners stay connected 24/7 through the messaging feature in our platform (Web and mobile",
   },
 ];
+
+export const contactSchema = yup.object().shape({
+  phone: yup.string().required("Phone Number is required"),
+  email: yup.string().email().required("Email is required"),
+  message: yup.string().required("Message is required").max(2500),
+});
