@@ -42,7 +42,7 @@ export default function Empower() {
                     <Flex flex={1} position='relative'>
                         <Image
                             loading='lazy'
-                            src="/empower.png"
+                            src="/images/general/empower.png"
                             alt='empower-img'
                         />
                     </Flex>

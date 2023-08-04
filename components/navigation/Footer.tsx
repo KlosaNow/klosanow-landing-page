@@ -2,11 +2,11 @@ import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Box, SimpleGrid, Text, chakra, VisuallyHidden, Stack } from '@chakra-ui/react'
-import Logo from "@/asset/general/logo.png"
-import Whatsapp from "@/asset/socials/WhatsApp.png"
-import Linkedin from "@/asset/socials/LinkedIn.png"
-import Twitter from "@/asset/socials/Twitter.png"
-import Instagram from "@/asset/socials/Instagram.png"
+import Logo from "@/public/images/general/logo.png"
+import Whatsapp from "@/public/images/socials/WhatsApp.png"
+import Linkedin from "@/public/images/socials/LinkedIn.png"
+import Twitter from "@/public/images/socials/Twitter.png"
+import Instagram from "@/public/images/socials/Instagram.png"
 import styles from "./footer.module.scss";
 import { authFooter, navFooter, SocialBtnProps } from '@/utils'
 

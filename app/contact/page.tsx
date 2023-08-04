@@ -49,7 +49,7 @@ export default function ContactPage() {
                         <Box display={{ base: 'none', md: 'block', lg: 'block' }}>
                             <Image
                                 loading='lazy'
-                                src="../../asset/general/contact.png"
+                                src="/images/general/contact.png"
                                 alt='connect-img'
                             />
                         </Box>

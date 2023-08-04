@@ -7,7 +7,7 @@ export default function Connect() {
             >
                 <Box
                     mt='3rem'
-                    bgImage="url('/connect.png')"
+                    bgImage="url('/images/general/connect.png')"
                     bgPosition='center'
                     bgSize='cover'
                     bgRepeat='no-repeat'
