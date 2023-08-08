@@ -23,6 +23,19 @@ export default function AboutPage() {
 
                     <Box mt={{ md: '-8rem' }}>
                         <Image src='/images/about/stack.png' alt='stack' loading='lazy' />
+
+                        <Box as='div'
+                            position='absolute'
+                            display={{ base: 'none', md: 'block', lg: 'block' }}
+                            width='572px'
+                            height='572px'
+                            bgColor='red.100'
+                            borderRadius='50%'
+                            right={{ md: '-40%', lg: '-20%' }}
+                            top='12%'
+                            zIndex={'1'}
+                        >
+                        </Box>
                     </Box>
                 </Box>
 
@@ -49,8 +62,6 @@ export default function AboutPage() {
                 <Box mt='8rem'>
                     <Box display='grid'
                         gridTemplateColumns={{ base: '1fr', md: 'repeat(2,1fr)', lg: 'repeat(2,1fr)' }}
-                        // justifyContent='space-between'
-                        // alignContent='center'
                         gap={{ md: '12rem', lg: '12rem' }}
                     >
                         <Box>
@@ -81,11 +92,24 @@ export default function AboutPage() {
                             </Box>
                         </Box>
 
-                        <Box>
+                        <Box mt='2rem'>
                             <Image loading='lazy' src='/images/about/culture.png' alt='culture' />
                         </Box>
                     </Box>
                 </Box>
+            </Box>
+            <Box mt='4rem' bgColor='neutral.30' px='4rem' py='8rem' display='flex' justifyContent='center' alignItems='center'>
+                <Box>
+                    <Text color='black.60' fontSize={{ base: '4xl', md: '4xl', lg: '5xl' }} textAlign='center'> Driving Innovation and </Text>
+                    <Text color='black.60' fontSize={{ base: '4xl', md: '4xl', lg: '5xl' }} textAlign='center'>Accomplishments</Text>
+                    <Text mt='1rem' color='black.50' textAlign='center' lineHeight='144.5%;' width={{ md: '716px' }} >
+                        Step behind the scenes and meet the exceptional individuals who bring our groundbreaking product to life.
+                        Through constant iterations and a passion for simplicity, our team of creative minds relentlessly
+                        pushes boundaries to deliver an unparalleled user experience. Join us as we redefine
+                        what&apos;s possible and embark on a journey of transformative accomplishments together.
+                    </Text>
+                </Box>
+
             </Box>
 
         </>
