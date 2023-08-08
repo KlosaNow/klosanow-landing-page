@@ -1,14 +1,22 @@
 import React from 'react'
 import { Box, Button, Flex, Heading, Stack, Text, Image } from '@chakra-ui/react'
 import Link from 'next/link'
+import { motion } from "framer-motion";
 
 
 export default function Hero(): JSX.Element {
     return (
+        <Box
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: '0.8' }}
+        >
         <Box mt={{ md: '8rem', lg: '8rem' }} height='100vh'>
             <Stack direction={{ base: 'column', md: 'row', lg: 'row' }}
                 px={{ base: '1rem', md: '6rem' }}
-                position='relative' >
+                    position='relative' as={motion.div}
+                >
                 <Box
                     as='div'
                     position='absolute'
@@ -29,12 +37,16 @@ export default function Hero(): JSX.Element {
                     flex={1}
                     alignItems={'center'}
                     justify={'center'}
-                    mt={{ md: '2rem', lg: '2rem' }}
+                        mt={{ md: '2rem', lg: '2rem' }} as={motion.div}
                 >
                     <Stack spacing={6} w={'full'} maxW={'lg'}>
 
                         <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-                            textAlign={{ base: 'center', md: 'center', lg: 'justify' }}
+                                textAlign={{ base: 'center', md: 'center', lg: 'justify' }}
+                                as={motion.h1}
+                                initial={{ y: -100 }}
+                                whileInView={{ y: 0 }}
+                                transition={{ duration: '0.8' }}
                         >
                             <Text as='span'
                                 fontSize='lg'
@@ -56,11 +68,22 @@ export default function Hero(): JSX.Element {
                             <Text color={'primary.100'} fontWeight={700}>learning just got</Text>
                             <Text color={'primary.100'} fontWeight={700}>easier with Klosanow</Text>
                         </Heading>
-                        <Text color={'black.100'} fontSize={{ base: 'md', md: 'lg', lg: 'lg' }} mt={{ base: '1.5rem', md: '2.5rem', lg: '2.5rem' }} mb='.3rem' fontWeight={500}>
+                            <Text as={motion.div}
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ duration: '0.8' }}
+                                color={'black.100'} fontSize={{ base: 'md', md: 'lg', lg: 'lg' }}
+                                mt={{ base: '1.5rem', md: '2.5rem', lg: '2.5rem' }}
+                                mb='.3rem' fontWeight={500}>
                             Create engaging video learning content,
                             send it to your learning community and stay connected 24/7 through the messaging feature in our platform.
                         </Text>
-                        <Stack direction={{ base: 'column', md: 'row', lg: 'row' }} spacing={4}>
+                            <Stack
+                                as={motion.div}
+                                initial={{ y: 100 }}
+                                whileInView={{ y: 0 }}
+                                transition={{ duration: '0.8' }}
+                                direction={{ base: 'column', md: 'row', lg: 'row' }} spacing={4}>
                             <Button size='lg'
                                 bg='primary.50' color='neutral.50'
                                 px='3rem'
@@ -93,7 +116,14 @@ export default function Hero(): JSX.Element {
                     transform={'translateY(0)'}
                     mt={{ md: '14rem' }} mr={{ md: '8rem' }}
                 ></Box>
-                <Flex flex={1} position='relative'>
+                    <Flex flex={1} position='relative' as={motion.div}
+                        whileHover={{ scale: 1.1 }}
+                        animate={{
+                            scale: [1.1, 1],
+                            x: [-100, 0],
+                        }}
+                        transition={{ duration: '0.5' }}
+                    >
                     <Image
                         loading='lazy'
                         src="/images/general/hero.png"
@@ -121,5 +151,6 @@ export default function Hero(): JSX.Element {
                 </Flex>
             </Stack>
         </Box >
+        </Box>
     )
 }
