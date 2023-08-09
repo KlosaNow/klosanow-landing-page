@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Heading, Text } from "@chakra-ui/react"
 import { features } from '@/utils'
 import Image from 'next/image'
+import { motion } from "framer-motion";
 
 
 export default function Features() {
@@ -51,7 +52,16 @@ export default function Features() {
                             justifyContent={'space-around'} alignItems={'center'} gap={'2rem'}
                             flexDirection={{ base: 'column', md: 'row', lg: 'row' }}>
                             {features.map((feat, index) => (
-                                <Box key={index} width={{ base: '250px', md: '362px', lg: '362px' }} height={'294px'}
+                                <Box key={index}
+                                    as={motion.div}
+                                    whileHover={{ scale: 1.1 }}
+                                    animate={{
+                                        scale: [1.1, 1],
+                                        x: [-100, 0],
+                                    }}
+                                    transition={{ duration: '0.5' }}
+                                    width={{ base: '250px', md: '362px', lg: '362px' }}
+                                    height={'294px'}
                                     borderRadius={'20px'}
                                     border={1}
                                     borderStyle={'solid'}
