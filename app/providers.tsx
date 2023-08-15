@@ -3,7 +3,6 @@
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
-
 import theme from '@/chakra.config'
 
 export function Providers({

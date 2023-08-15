@@ -14,6 +14,7 @@ import Logo from "@/public/images/general/logo.png"
 import { Links, NavLinkProps } from '@/utils';
 
 
+
 const NavLink = ({ children, href, onClose }: NavLinkProps) => {
     return (
         <Link px={2} py={1} rounded='md' color='black.100' fontWeight={500} href={href} onClick={onClose} >
@@ -98,6 +99,7 @@ export default function Navbar(): JSX.Element {
 
                         </Link>
                     </Flex>
+
 
                 </Flex>
 
