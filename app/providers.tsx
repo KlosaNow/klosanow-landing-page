@@ -4,6 +4,8 @@ import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 import theme from '@/chakra.config'
+import { Footer, Navbar } from '@/components/navigation'
+import { Box } from '@chakra-ui/react'
 
 export function Providers({
     children
@@ -13,7 +15,11 @@ export function Providers({
     return (
         <CacheProvider>
             <ChakraProvider theme={theme}>
-                {children}
+                <Navbar />
+                <Box mt={20}> 
+                    {children}
+                </Box>
+                <Footer />
                 <ProgressBar
                     height="4px"
                     color="#523BA3"

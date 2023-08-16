@@ -49,7 +49,6 @@ export default function ContactForm() {
               inputStyle={{
                 width: "100%",
                 height: "3rem",
-                outline: "2px solid transparent",
               }}
               value={formik.values.phone}
               onChange={(e: () => void) => formik.setFieldValue("phone", e)}
