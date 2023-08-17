@@ -2,17 +2,18 @@
 
 import React from 'react'
 import { Box, Text, Image } from '@chakra-ui/react'
+import { wrap } from 'module'
 export default function AboutPage() {
     return (
         <>
-            <Box mt={{ base: '.2rem', md: '6rem', lg: '6rem' }}
+            <Box mt={{ base: '.2rem', md: '6rem' }}
                 px={{ base: '1rem', md: '6rem' }} py='6rem'
             >
                 <Box display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
                     <Box position='absolute' top={{ base: '5rem', md: '10rem' }} right={{ base: '2rem', md: '14rem' }}>
                         <Image src='/images/about/moon.svg' alt='moon' />
                     </Box>
-                    <Text color='black.60' fontSize={{ base: '4xl', md: '4xl', lg: '5xl' }}>Get to Know Us!</Text>
+                    <Text color='black.60' fontSize={{ base: '4xl', md: '4xl' }}>Get to Know Us!</Text>
                     <Text mt='1rem' color='black.50' textAlign='center' lineHeight='144.5%;' width={{ md: '716px' }}>
                         At Klosanow, we revolutionize the educational landscape by providing a cutting-edge EdTech
                         platform that seamlessly connects tutors with learners. Our innovative solution empowers tutors
@@ -26,12 +27,12 @@ export default function AboutPage() {
 
                         <Box as='div'
                             position='absolute'
-                            display={{ base: 'none', md: 'block', lg: 'block' }}
+                            display={{ base: 'none', md: 'block' }}
                             width='572px'
                             height='572px'
                             bgColor='red.100'
                             borderRadius='50%'
-                            right={{ md: '-40%', lg: '-20%' }}
+                            right={{ md: '-30%' }}
                             top='12%'
                             zIndex={'1'}
                         >
@@ -39,19 +40,21 @@ export default function AboutPage() {
                     </Box>
                 </Box>
 
-                <Box bgColor='primary.5' py='4rem' px={{ base: '1rem', md: '8rem', lg: '8rem' }} borderRadius='20px'
+                <Box bgColor='primary.5' py='4rem' px={{ base: '1rem', md: '8rem' }} borderRadius='20px'
                     display='flex'
                     justifyContent='space-between'
                     alignItems='center'
-                    flexWrap='wrap'
+                    gap={{ base: '2rem', md: '8rem' }}
+                    flexDirection={{ base: 'column', md: 'row' }}
+
                 >
                     <Box>
                         <Image loading='lazy' src='/images/about/vision.png' alt='vision' />
                     </Box>
                     <Box>
-                        <Text fontSize={{ base: '4xl', md: '4xl', lg: '5xl' }}
-                            textAlign={{ base: 'center', md: 'right', lg: 'right' }} color='black.60'>Our Vision</Text>
-                        <Text mt='1rem' color='black.50' textAlign={{ base: 'center', md: 'right', lg: 'right' }}
+                        <Text fontSize={{ base: '4xl', md: '4xl' }}
+                            textAlign={{ base: 'center', md: 'right' }} color='black.60'>Our Vision</Text>
+                        <Text mt='1rem' color='black.50' textAlign={{ base: 'center', md: 'right' }}
                             lineHeight='144.5%;' width={{ base: '100%', md: '322px' }}>
                             We aspire to create an online education platform that is designed
                             to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa
@@ -61,8 +64,8 @@ export default function AboutPage() {
 
                 <Box mt='8rem'>
                     <Box display='grid'
-                        gridTemplateColumns={{ base: '1fr', md: 'repeat(2,1fr)', lg: 'repeat(2,1fr)' }}
-                        gap={{ md: '12rem', lg: '12rem' }}
+                        gridTemplateColumns={{ base: '1fr', md: 'repeat(2,1fr)' }}
+                        gap={{ md: '12rem' }}
                     >
                         <Box>
                             <Text color='black.60' fontSize={'4xl'}>

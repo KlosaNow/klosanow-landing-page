@@ -1,3 +1,4 @@
+"use client"
 import React, { ReactNode, useState, useEffect } from 'react'
 import {
     Box,
@@ -12,6 +13,7 @@ import Image from 'next/image'
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Logo from "@/public/images/general/logo.png"
 import { Links, NavLinkProps } from '@/utils';
+
 
 
 const NavLink = ({ children, href, onClose }: NavLinkProps) => {
@@ -98,6 +100,7 @@ export default function Navbar(): JSX.Element {
 
                         </Link>
                     </Flex>
+
 
                 </Flex>
 

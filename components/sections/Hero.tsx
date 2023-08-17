@@ -13,7 +13,7 @@ export default function Hero(): JSX.Element {
             transition={{ duration: '0.8' }}
         >
         <Box mt={{ md: '8rem', lg: '8rem' }} height='100vh'>
-            <Stack direction={{ base: 'column', md: 'row', lg: 'row' }}
+                <Stack direction={{ base: 'column', md: 'row' }}
                 px={{ base: '1rem', md: '6rem' }}
                     position='relative' as={motion.div}
                 >
@@ -27,7 +27,7 @@ export default function Hero(): JSX.Element {
                     borderColor={'secondary.30'}
                     borderStyle={'solid'}
                     borderRadius='50%'
-                    top={{ base: '-65%', md: '-40%', lg: '-40%' }}
+                        top={{ base: '-65%', md: '-40%' }}
                     zIndex={'1'} 
                 >
                 </Box>
@@ -37,11 +37,11 @@ export default function Hero(): JSX.Element {
                     flex={1}
                     alignItems={'center'}
                     justify={'center'}
-                        mt={{ md: '2rem', lg: '2rem' }} as={motion.div}
+                        mt={{ md: '2rem' }} as={motion.div}
                 >
                     <Stack spacing={6} w={'full'} maxW={'lg'}>
 
-                        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+                            <Heading fontSize={{ base: '3xl', md: '4xl' }}
                                 textAlign={{ base: 'center', md: 'center', lg: 'justify' }}
                                 as={motion.h1}
                                 initial={{ y: -100 }}
@@ -72,8 +72,8 @@ export default function Hero(): JSX.Element {
                                 initial={{ x: -50, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ duration: '0.8' }}
-                                color={'black.100'} fontSize={{ base: 'md', md: 'lg', lg: 'lg' }}
-                                mt={{ base: '1.5rem', md: '2.5rem', lg: '2.5rem' }}
+                                color={'black.100'} fontSize={{ base: 'md', md: 'lg' }}
+                                mt={{ base: '1.5rem', md: '1.5rem' }}
                                 mb='.3rem' fontWeight={500}>
                             Create engaging video learning content,
                             send it to your learning community and stay connected 24/7 through the messaging feature in our platform.
@@ -83,7 +83,7 @@ export default function Hero(): JSX.Element {
                                 initial={{ y: 100 }}
                                 whileInView={{ y: 0 }}
                                 transition={{ duration: '0.8' }}
-                                direction={{ base: 'column', md: 'row', lg: 'row' }} spacing={4}>
+                                direction={{ base: 'column', md: 'row' }} spacing={4}>
                             <Button size='lg'
                                 bg='primary.50' color='neutral.50'
                                 px='3rem'
@@ -136,7 +136,7 @@ export default function Hero(): JSX.Element {
                     <Box
                         as='div'
                         position='absolute'
-                        display={{ base: 'none', md: 'block', lg: 'block' }}
+                            display={{ base: 'none', md: 'block' }}
                         top={{ md: '40%', lg: '50.5%' }}
                         width='572px'
                         height='572px'
@@ -144,7 +144,7 @@ export default function Hero(): JSX.Element {
                         borderColor={'secondary.30'}
                         borderStyle={'solid'}
                         borderRadius='50%'
-                        right={{ base: '-65%', md: '-40%', lg: '-40%' }}
+                            right={{ base: '-65%', md: '-40%' }}
                         zIndex={'1'}
                     >
                     </Box>

@@ -7,6 +7,7 @@ export const Links = [
   { title: "Contact", href: "/contact" },
 ];
 
+
 export const navFooter = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },

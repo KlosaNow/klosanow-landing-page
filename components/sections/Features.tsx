@@ -7,18 +7,18 @@ import { motion } from "framer-motion";
 
 export default function Features() {
     return (
-        <Box mt={{ base: '6rem', md: '5px', lg: '5px' }}
+        <Box mt={{ base: '6rem', md: '5px' }}
             zIndex={'1'} position={'relative'} >
             <Box
                 as='div'
                 position='absolute'
-                right={{ base: '23%', md: '75%', lg: '75.5%' }}
+                right={{ base: '23%', md: '75%' }}
                 width='572px'
                 height='572px'
                 border={1}
                 bg={'red.100'}
                 borderRadius='50%'
-                top={{ base: '65%', md: '40%', lg: '30%' }}
+                top={{ base: '65%', md: '40%' }}
                 zIndex={'-1'}
                 display={{ base: 'none', md: 'block', lg: 'block' }}
             >
@@ -50,7 +50,7 @@ export default function Features() {
                     <Box mt={'12rem'} >
                         <Box display={'flex'}
                             justifyContent={'space-around'} alignItems={'center'} gap={'2rem'}
-                            flexDirection={{ base: 'column', md: 'row', lg: 'row' }}>
+                            flexDirection={{ base: 'column', md: 'row' }}>
                             {features.map((feat, index) => (
                                 <Box key={index}
                                     as={motion.div}
@@ -60,7 +60,7 @@ export default function Features() {
                                         x: [-100, 0],
                                     }}
                                     transition={{ duration: '0.5' }}
-                                    width={{ base: '250px', md: '362px', lg: '362px' }}
+                                    width={{ base: '250px', md: '362px' }}
                                     height={'294px'}
                                     borderRadius={'20px'}
                                     border={1}

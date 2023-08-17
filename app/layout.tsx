@@ -1,10 +1,12 @@
-'use client'
 import { Providers } from './providers'
 import './globals.css'
-import { Footer, Navbar } from '@/components/navigation'
-import { Box } from '@chakra-ui/react'
+import { Metadata } from 'next';
 
 
+export const metadata: Metadata = {
+  title: 'Klosanow',
+  description: 'An online education platform for sub-Saharan Africa'
+}
 export default function RootLayout({
   children,
 }: {
@@ -15,11 +17,7 @@ export default function RootLayout({
       <head />
       <body>
         <Providers>
-          <Navbar />
-          <Box mt={20}> 
           {children}
-          </Box>
-          <Footer />
         </Providers>
       </body>
     </html>
