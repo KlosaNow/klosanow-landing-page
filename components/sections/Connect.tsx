@@ -3,7 +3,7 @@ import { Box, Button, Heading, Input, InputGroup, InputRightElement, Text } from
 export default function Connect() {
     return (
         <>
-            <Box mt={{ base: '4rem', md: '8rem', lg: '12rem' }} height='100%'
+            <Box mt={{ base: '4rem', md: '8rem' }} height='100%'
             >
                 <Box
                     mt='3rem'
@@ -13,13 +13,13 @@ export default function Connect() {
                     bgRepeat='no-repeat'
                     py='8rem'
                     display='flex'
-                    flexDirection={{ base: 'column', md: 'column', lg: 'column' }}
+                    flexDirection={{ base: 'column', md: 'column' }}
                     justifyContent={'center'}
                     alignItems={'center'}
                     px='1rem'
                 >
                     <Text color='neutral.30'>Let’s Connect</Text>
-                    <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+                    <Heading fontSize={{ base: '3xl', md: '4xl' }}
                         color='neutral.30' mt='2rem'
                     >
                         <Text textAlign='center'>Stay Connected with Our Newsletter</Text>
@@ -27,7 +27,7 @@ export default function Connect() {
 
                     </Heading>
                     <Box bg={'neutral.30'} py='2rem' mt='2rem'
-                        width={{ base: '100%', md: '715.559px', lg: '715.559px' }}
+                        width={{ base: '100%', md: '715.559px' }}
                         borderRadius='20px'
                         px='3rem'
                     >

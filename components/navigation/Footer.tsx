@@ -36,17 +36,17 @@ export default function Footer(): JSX.Element {
     return (
         <>
             <Box as='footer' h='50%' bgColor='primary.5'
-                px={{ base: '1rem', md: '6rem' }} >
+                px={{ base: '1rem', md: '3rem' }} >
                 <Box pt='4rem' py='4rem'>
                     <SimpleGrid
                         templateColumns={{ sm: '1fr 1fr', md: ' 2fr 1fr 1fr' }}
-                        spacing={{ base: '8', md: '20', lg: '20' }} px={10} pl={{ base: '25px', md: '60px' }}
+                        spacing={{ base: '8', md: '10' }} px={10} pl={{ base: '25px', md: '60px' }}
                         mb='20px'
                         className={styles.footer_ul}
                     >
                         <Box>
                             <Image src={Logo} alt='logo' />
-                            <Box width={{ base: '100%', md: '404px', lg: '404px' }} mt='2rem'>
+                            <Box width={{ base: '100%', md: '404px' }} mt='2rem'>
                                 <Text color='black.40'>Bridging the Gap Between Learners and Tutors with Our Innovative Product</Text>
                             </Box>
                             <Box mt='3rem'>
@@ -55,7 +55,8 @@ export default function Footer(): JSX.Element {
                         </Box>
                         <Box>
                             <Text color='black.40' fontSize='lg'>Quick Links</Text>
-                            <Box mt='1rem' display='flex' justifyContent={{ base: 'none', md: 'space-between', lg: 'space-between' }} gap={{ base: '3rem', md: 'none', lg: 'none' }} alignItems='center'>
+                            <Box mt='1rem' display='flex' justifyContent={{ base: 'none', md: 'space-between' }}
+                                gap={{ base: '3rem', md: 'none' }} alignItems='center'>
                                 <Box>
                                     <ul>
                                         {navFooter.map((link, index) => (

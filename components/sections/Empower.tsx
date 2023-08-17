@@ -4,8 +4,8 @@ import { Box, Flex, Heading, Stack, Text, Image } from '@chakra-ui/react'
 export default function Empower() {
     return (
         <>
-            <Box mt={{ base: '4rem', md: '8rem', lg: '12rem' }}>
-                <Stack direction={{ base: 'column', md: 'row', lg: 'row' }}
+            <Box mt={{ base: '4rem', md: '12rem' }}>
+                <Stack direction={{ base: 'column', md: 'row' }}
                     px={{ base: '1rem', md: '6rem' }}
                     position='relative' >
                     <Flex
@@ -13,11 +13,11 @@ export default function Empower() {
                         flex={1}
                         alignItems={'center'}
                         justify={'center'}
-                        mt={{ md: '2rem', lg: '2rem' }}
+                        mt={{ md: '2rem' }}
                     >
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
 
-                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+                            <Heading fontSize={{ base: '3xl', md: '4xl' }}
                                 textAlign={{ base: 'center', md: 'center', lg: 'justify' }}
                             >
                                 <Text color={'primary.100'} fontWeight={700}>Empowering</Text>
@@ -26,7 +26,7 @@ export default function Empower() {
                                 <Text color={'primary.100'} fontWeight={700}>Education</Text>
                             </Heading>
                             <Text color={'black.100'}
-                                fontSize={{ base: 'md', md: 'lg', lg: 'lg' }}
+                                fontSize={{ base: 'md', md: 'lg' }}
                                 mt={'1rem'} mb='.3rem' fontWeight={500}>
                                 Our online teaching and learning platform is both effective and efficient,
                                 enabling learners access learning contents created by tutors seamlessly
