@@ -1,9 +1,10 @@
 "use client"
 
 import React from 'react'
-import { Box, Heading, Text, Image } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 import ContactForm from '@/components/contact';
-
+import Image from 'next/image'
+import contactImg from "/public/images/general/contact.png"
 
 export default function ContactPage() {
     return (
@@ -49,7 +50,7 @@ export default function ContactPage() {
                         <Box display={{ base: 'none', md: 'block' }}>
                             <Image
                                 loading='lazy'
-                                src="/images/general/contact.png"
+                                src={contactImg}
                                 alt='connect-img'
                             />
                         </Box>

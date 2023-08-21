@@ -1,8 +1,13 @@
 "use client"
 
 import React from 'react'
-import { Box, Text, Image } from '@chakra-ui/react'
-import { wrap } from 'module'
+import { Box, Text } from '@chakra-ui/react'
+import Image from 'next/image'
+import moonSvg from "/public/images/about/moon.svg"
+import stackImg from "/public/images/about/stack.png"
+import visionImg from "/public/images/about/vision.png"
+import cultureImg from "/public/images/about/culture.png"
+
 export default function AboutPage() {
     return (
         <>
@@ -11,7 +16,7 @@ export default function AboutPage() {
             >
                 <Box display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
                     <Box position='absolute' top={{ base: '5rem', md: '10rem' }} right={{ base: '2rem', md: '14rem' }}>
-                        <Image src='/images/about/moon.svg' alt='moon' />
+                        <Image src={moonSvg} alt='moon' />
                     </Box>
                     <Text color='black.60' fontSize={{ base: '4xl', md: '4xl' }}>Get to Know Us!</Text>
                     <Text mt='1rem' color='black.50' textAlign='center' lineHeight='144.5%;' width={{ md: '716px' }}>
@@ -23,7 +28,7 @@ export default function AboutPage() {
                     </Text>
 
                     <Box mt={{ md: '-8rem' }}>
-                        <Image src='/images/about/stack.png' alt='stack' loading='lazy' />
+                        <Image src={stackImg} alt='stack' loading='lazy' />
 
                         <Box as='div'
                             position='absolute'
@@ -49,7 +54,7 @@ export default function AboutPage() {
 
                 >
                     <Box>
-                        <Image loading='lazy' src='/images/about/vision.png' alt='vision' />
+                        <Image loading='lazy' src={visionImg} alt='vision' />
                     </Box>
                     <Box>
                         <Text fontSize={{ base: '4xl', md: '4xl' }}
@@ -96,7 +101,7 @@ export default function AboutPage() {
                         </Box>
 
                         <Box mt='2rem'>
-                            <Image loading='lazy' src='/images/about/culture.png' alt='culture' />
+                            <Image loading='lazy' src={cultureImg} alt='culture' />
                         </Box>
                     </Box>
                 </Box>

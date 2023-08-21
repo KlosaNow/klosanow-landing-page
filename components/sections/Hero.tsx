@@ -1,8 +1,9 @@
 import React from 'react'
-import { Box, Button, Flex, Heading, Stack, Text, Image } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { motion } from "framer-motion";
-
+import Image from 'next/image'
+import HeroImg from "/public/images/general/hero.png"
 
 export default function Hero(): JSX.Element {
     return (
@@ -125,11 +126,13 @@ export default function Hero(): JSX.Element {
                         transition={{ duration: '0.5' }}
                     >
                     <Image
-                        loading='lazy'
-                        src="/images/general/hero.png"
-                        alt='hero-img'
-                        position='absolute'
-                        zIndex={10}
+                            loading='lazy'
+                            src={HeroImg}
+                            alt='hero-img'
+                            style={{
+                                position: 'absolute',
+                                zIndex: '10'
+                            }}
 
 
                     />
