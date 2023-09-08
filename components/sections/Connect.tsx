@@ -29,7 +29,7 @@ export default function Connect() {
                     <Box bg={'neutral.30'} py='2rem' mt='2rem'
                         width={{ base: '100%', md: '715.559px' }}
                         borderRadius='20px'
-                        px='3rem'
+                        px={{ base: '1rem', md: '3rem', lg: '3rem' }}
                     >
                         <InputGroup size='lg'>
                             <Input
@@ -41,9 +41,9 @@ export default function Connect() {
                             <InputRightElement width='4.5rem'>
                                 <Button
                                     top='-10px'
-                                    size='lg'
+                                    size='md'
                                     bg='primary.50' color='neutral.50'
-                                    px='4rem'
+                                    px={{ base: '2.8rem', md: '4rem' }}
                                     borderRadius='10px'
                                     _hover={{
                                         opacity: .8,

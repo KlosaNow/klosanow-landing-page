@@ -1,5 +1,5 @@
 "use client"
-import React, { ReactNode, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
     Box,
     Flex, HStack,
@@ -12,13 +12,18 @@ import {
 import Image from 'next/image'
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Logo from "@/public/images/general/logo.png"
-import { Links, NavLinkProps } from '@/utils';
+import { Links, NavLinkProps, MobileLinks } from '@/utils';
 
 
 
 const NavLink = ({ children, href, onClose }: NavLinkProps) => {
     return (
-        <Link px={2} py={1} rounded='md' color='black.100' fontWeight={500} href={href} onClick={onClose} >
+        <Link px={2} py={1} rounded='md' color='primary.80'
+            fontWeight={'bold'}
+            href={href} onClick={onClose}
+            _activeLink={{ bg: 'primary.20' }}
+            _hover={{ textDecoration: 'underline' }}
+        >
             {children}
         </Link>
     )
@@ -58,18 +63,7 @@ export default function Navbar(): JSX.Element {
                 boxShadow={navScrollShadow ? 'sm' : ''}>
 
                 <Flex h={16} alignItems='center' justifyContent='space-between'>
-                    <IconButton
-                        variant='outline'
-                        color='primary.70'
-                        size={'md'}
-                        icon={<HamburgerIcon />}
-                        aria-label={'Open Menu'}
-                        display={{ md: 'none' }}
-                        onClick={isOpen ? onClose : onOpen}
-                        _hover={{
-                            bg: 'none'
-                        }}
-                    />
+
                     <HStack spacing={8} alignItems={'center'}>
 
                         <Box px={{ base: 'none', md: '2rem' }}>
@@ -93,13 +87,25 @@ export default function Navbar(): JSX.Element {
 
                     <Flex alignItems='center' justifyContent='space-between' gap='4rem'>
                         <Link href='#' display={{ base: 'none', md: 'block' }}>
-                            <Text color='primary.50'>Sign-up</Text>
+                            <Text color='primary.50' fontWeight={500}>Sign-up</Text>
                         </Link>
-                        <Link href='#'>
-                            <Button bgColor='primary.50' color='neutral.50' size='md'>Login</Button>
+                        <Link href='#' display={{ base: 'none', md: 'block' }}>
+                            <Button bgColor='primary.50' fontWeight={500} color='neutral.50' size='md'>Login</Button>
 
                         </Link>
                     </Flex>
+                    <IconButton
+                        variant='outline'
+                        color='primary.70'
+                        size={'md'}
+                        icon={<HamburgerIcon />}
+                        aria-label={'Open Menu'}
+                        display={{ md: 'none' }}
+                        onClick={isOpen ? onClose : onOpen}
+                        _hover={{
+                            bg: 'none'
+                        }}
+                    />
 
 
                 </Flex>
@@ -121,7 +127,7 @@ export default function Navbar(): JSX.Element {
                                 </DrawerHeader>
                                 <DrawerBody>
                                     <Stack as={'nav'} spacing={4}>
-                                        {Links.map((link) => (
+                                        {MobileLinks.map((link) => (
                                             <NavLink key={link.title} href={link.href ?? '#'} onClose={onClose}
                                             >{link.title}</NavLink>
                                         ))}

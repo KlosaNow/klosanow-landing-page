@@ -6,6 +6,12 @@ export const Links = [
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
 ];
+export const MobileLinks = [
+  { title: "Home", href: "/" },
+  { title: "About Us", href: "/about" },
+  { title: "Contact", href: "/contact" },
+  { title: "LogIn", href: "#" },
+];
 
 
 export const navFooter = [
