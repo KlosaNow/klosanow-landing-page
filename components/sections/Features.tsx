@@ -23,9 +23,7 @@ export default function Features() {
                 display={{ base: 'none', md: 'block', lg: 'block' }}
             >
             </Box>
-
-            <Box px={{ base: '2rem', md: '6rem' }}
-            >
+            <Box px={{ base: '2rem', md: '6rem' }} mt={{ base: '24rem', md: '0', lg: '0' }}>
                 <Box bg={'neutral.40'}
                     py='4rem' px='5rem' 
                     borderRadius={'20px'} boxShadow={'base'} height={'100%'} >
