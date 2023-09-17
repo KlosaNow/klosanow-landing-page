@@ -5,8 +5,8 @@ import { Box, Text, Heading } from '@chakra-ui/react'
 import Image from 'next/image'
 import moonSvg from "/public/images/about/moon.svg"
 import stackImg from "/public/images/about/stack.png"
-import visionImg from "/public/images/about/vision.png"
 import cultureImg from "/public/images/about/culture.png"
+import VisionSlide from "@/components/visionSlide"
 
 export default function AboutPage() {
     return (
@@ -44,8 +44,9 @@ export default function AboutPage() {
                         </Box>
                     </Box>
                 </Box>
+                <VisionSlide />
 
-                <Box bgColor='primary.5' py='4rem' px={{ base: '1rem', md: '8rem' }} borderRadius='20px'
+                {/* <Box bgColor='primary.5' py='4rem' px={{ base: '1rem', md: '8rem' }} borderRadius='20px'
                     display='flex'
                     justifyContent='space-between'
                     alignItems='center'
@@ -65,7 +66,7 @@ export default function AboutPage() {
                             to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa
                         </Text>
                     </Box>
-                </Box>
+                </Box> */}
 
                 <Box mt='8rem'>
                     <Box display='grid'
