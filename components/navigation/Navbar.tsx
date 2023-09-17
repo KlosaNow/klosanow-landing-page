@@ -19,7 +19,8 @@ import { Links, NavLinkProps, MobileLinks } from '@/utils';
 const NavLink = ({ children, href, onClose }: NavLinkProps) => {
     return (
         <Link px={2} py={1} rounded='md' color='primary.80'
-            fontWeight={'bold'}
+            fontWeight={400}
+            fontSize='16px'
             href={href} onClick={onClose}
             _activeLink={{ bg: 'primary.20' }}
             _hover={{ textDecoration: 'underline' }}
@@ -87,10 +88,12 @@ export default function Navbar(): JSX.Element {
 
                     <Flex alignItems='center' justifyContent='space-between' gap='4rem'>
                         <Link href='#' display={{ base: 'none', md: 'block' }}>
-                            <Text color='primary.50' fontWeight={500}>Sign-up</Text>
+                            <Text color='primary.50' fontWeight={400}
+                                fontSize='16px'>Sign-up</Text>
                         </Link>
                         <Link href='#' display={{ base: 'none', md: 'block' }}>
-                            <Button bgColor='primary.50' fontWeight={500} color='neutral.50' size='md'>Login</Button>
+                            <Button bgColor='primary.50' fontWeight={400}
+                                fontSize='16px' color='neutral.50' size='md'>Login</Button>
 
                         </Link>
                     </Flex>

@@ -1,9 +1,7 @@
 import React from "react";
 import {
   Box,
-  Heading,
   Text,
-  Image,
   FormControl,
   FormLabel,
   Input,
@@ -103,6 +101,7 @@ export default function ContactForm() {
               color="neutral.50"
               bgColor="primary.50"
               type="submit"
+              fontWeight={400}
               disabled={!(formik.dirty && formik.isValid)}
             >
               Submit

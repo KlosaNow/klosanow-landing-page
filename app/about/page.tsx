@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Text, Heading } from '@chakra-ui/react'
 import Image from 'next/image'
 import moonSvg from "/public/images/about/moon.svg"
 import stackImg from "/public/images/about/stack.png"
@@ -18,8 +18,8 @@ export default function AboutPage() {
                     <Box position='absolute' top={{ base: '5rem', md: '10rem' }} right={{ base: '2rem', md: '14rem' }}>
                         <Image src={moonSvg} alt='moon' />
                     </Box>
-                    <Text color='black.60' fontSize={{ base: '4xl', md: '4xl' }}>Get to Know Us!</Text>
-                    <Text mt='1rem' color='black.50' textAlign='center' lineHeight='144.5%;' width={{ md: '716px' }}>
+                    <Heading color='black.60' fontSize={{ base: '3xl', md: '4xl' }} fontWeight={500}>Get to Know Us!</Heading>
+                    <Text mt='1rem' color='black.50' fontSize={'18px'} textAlign='center' lineHeight='144.5%;' width={{ md: '716px' }}>
                         At Klosanow, we revolutionize the educational landscape by providing a cutting-edge EdTech
                         platform that seamlessly connects tutors with learners. Our innovative solution empowers tutors
                         to create and share engaging pre-recorded video lessons, enabling learners to access and engage
@@ -57,8 +57,8 @@ export default function AboutPage() {
                         <Image loading='lazy' src={visionImg} alt='vision' />
                     </Box>
                     <Box>
-                        <Text fontSize={{ base: '4xl', md: '4xl' }}
-                            textAlign={{ base: 'center', md: 'right' }} color='black.60'>Our Vision</Text>
+                        <Heading fontSize={{ base: '3xl', md: '4xl' }} fontWeight={500}
+                            textAlign={{ base: 'center', md: 'right' }} color='black.60'>Our Vision</Heading>
                         <Text mt='1rem' color='black.50' textAlign={{ base: 'center', md: 'right' }}
                             lineHeight='144.5%;' width={{ base: '100%', md: '322px' }}>
                             We aspire to create an online education platform that is designed
@@ -73,29 +73,29 @@ export default function AboutPage() {
                         gap={{ md: '12rem' }}
                     >
                         <Box>
-                            <Text color='black.60' fontSize={'4xl'}>
-                                We live a worthwhile culture
-                            </Text>
+                            <Heading fontWeight={500} color='black.60' fontSize={{ base: '3xl', md: '4xl' }}>
+                                We live a worthwhile  <Text as='u'>culture</Text>
+                            </Heading>
                             <Box mt='2rem'>
-                                <Text lineHeight='144.5%;' color='black.50' >
-                                    Seamless: Klosanow values providing a smooth
+                                <Text lineHeight='144.5%;' color='black.50' fontSize='18px'>
+                                    <Text as='u' fontWeight={600}>Seamless:</Text> Klosanow values providing a smooth
                                     and hassle-free experience for its users, ensuring that using the platform is effortless and efficient.
                                 </Text>
-                                <Text lineHeight='144.5%;' color='black.50' mt='1rem'>
-                                    Support: The brand places high importance on offering strong customer
+                                <Text lineHeight='144.5%;' color='black.50' mt='1rem' fontSize='18px'>
+                                    <Text as='u' fontWeight={600}> Support:</Text> The brand places high importance on offering strong customer
                                     support and assistance to its users, ensuring they have the guidance they need.
                                 </Text>
-                                <Text lineHeight='144.5%;' color='black.50' mt='1rem'>
-                                    Growth: Klosanow promotes a culture of continuous growth and improvement, both for the platform and its users.
+                                <Text lineHeight='144.5%;' color='black.50' mt='1rem' fontSize='18px'>
+                                    <Text as='u' fontWeight={600}> Growth:</Text> Klosanow promotes a culture of continuous growth and improvement, both for the platform and its users.
                                 </Text>
-                                <Text lineHeight='144.5%;' color='black.50' mt='1rem' >
-                                    Openness: The brand encourages an open and transparent communication culture, where ideas and feedback are welcomed.
+                                <Text lineHeight='144.5%;' color='black.50' mt='1rem' fontSize='18px' >
+                                    <Text as='u' fontWeight={600}> Openness: </Text> The brand encourages an open and transparent communication culture, where ideas and feedback are welcomed.
                                 </Text>
-                                <Text lineHeight='144.5%;' color='black.50' mt='1rem'>
-                                    Inspiring: Klosanow aims to inspire its users to embrace the power of online education and pursue their learning goals with enthusiasm.
+                                <Text lineHeight='144.5%;' color='black.50' mt='1rem' fontSize='18px'>
+                                    <Text as='u' fontWeight={600}> Inspiring:</Text> Klosanow aims to inspire its users to embrace the power of online education and pursue their learning goals with enthusiasm.
                                 </Text>
-                                <Text lineHeight='144.5%;' color='black.50' mt='1rem'>
-                                    Teamwork: Klosanow values teamwork and collaboration among its employees to achieve common goals and objectives.
+                                <Text lineHeight='144.5%;' color='black.50' mt='1rem' fontSize='18px'>
+                                    <Text as='u' fontWeight={600}>Teamwork:</Text> Klosanow values teamwork and collaboration among its employees to achieve common goals and objectives.
                                 </Text>
                             </Box>
                         </Box>
@@ -106,11 +106,11 @@ export default function AboutPage() {
                     </Box>
                 </Box>
             </Box>
-            <Box mt='4rem' bgColor='neutral.30' px='4rem' py='8rem' display='flex' justifyContent='center' alignItems='center'>
+            <Box mt='4rem' bgColor='neutral.5' px='4rem' py='8rem' display='flex' justifyContent='center' alignItems='center'>
                 <Box>
-                    <Text color='black.60' fontSize={{ base: '4xl', md: '4xl', lg: '5xl' }} textAlign='center'> Driving Innovation and </Text>
-                    <Text color='black.60' fontSize={{ base: '4xl', md: '4xl', lg: '5xl' }} textAlign='center'>Accomplishments</Text>
-                    <Text mt='1rem' color='black.50' textAlign='center' lineHeight='144.5%;' width={{ md: '716px' }} >
+                    <Heading color='black.60' fontWeight={500} fontSize={{ base: '4xl', md: '3xl', lg: '4xl' }} textAlign='center'> Driving Innovation and </Heading>
+                    <Heading color='black.60' fontWeight={500} fontSize={{ base: '4xl', md: '3xl', lg: '4xl' }} textAlign='center'>Accomplishments</Heading>
+                    <Text mt='1rem' color='black.50' fontSize={'18px'} textAlign='center' lineHeight='144.5%;' width={{ md: '716px' }} >
                         Step behind the scenes and meet the exceptional individuals who bring our groundbreaking product to life.
                         Through constant iterations and a passion for simplicity, our team of creative minds relentlessly
                         pushes boundaries to deliver an unparalleled user experience. Join us as we redefine
