@@ -14,7 +14,6 @@ export default function VisionSlide(): JSX.Element {
                     alignItems='center'
                     gap={{ base: '2rem', md: '8rem' }}
                     flexDirection={{ base: 'column', md: 'row' }}
-
                 >
                     <Box>
                         <Image loading='lazy' src={visionImg} alt='vision' />
