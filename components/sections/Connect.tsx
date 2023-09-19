@@ -20,13 +20,13 @@ export default function Connect() {
                 >
                     <Text color='neutral.30'>Let’s Connect</Text>
                     <Heading fontSize={{ base: '3xl', md: '4xl' }}
-                        color='neutral.30' mt='2rem'
+                        color='neutral.50' mt='2rem'
                     >
                         <Text textAlign='center'>Stay Connected with Our Newsletter</Text>
                         <Text textAlign='center'>for the Latest Updates</Text>
 
                     </Heading>
-                    <Box bg={'neutral.30'} py='2rem' mt='2rem'
+                    <Box bg={'neutral.50'} py='2rem' mt='2rem'
                         width={{ base: '100%', md: '715.559px' }}
                         borderRadius='20px'
                         px={{ base: '1rem', md: '3rem', lg: '3rem' }}

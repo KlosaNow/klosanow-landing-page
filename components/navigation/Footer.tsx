@@ -47,7 +47,7 @@ export default function Footer(): JSX.Element {
                         <Box>
                             <Image src={Logo} alt='logo' />
                             <Box width={{ base: '100%', md: '404px' }} mt='2rem'>
-                                <Text color='black.40'>Bridging the Gap Between Learners and Tutors with Our Innovative Product</Text>
+                                <Text color='black.40'>Bridging the Gap Between Learners and Tutors</Text>
                             </Box>
                             <Box mt='3rem'>
                                 <Text color='black.40' fontSize='lg'>© {new Date().getFullYear()} All rights reserved </Text>
