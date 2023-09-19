@@ -1,10 +1,34 @@
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { Box, Heading, Text } from '@chakra-ui/react'
 import visionImg from "/public/images/about/vision.png"
 import Image from 'next/image'
+import Slider from "react-slick"
 
 export default function VisionSlide(): JSX.Element {
+
+    const sliderRef = useRef<any>(null)
+
+    const settings = {
+        dots: true,
+        infinte: true,
+        centerMode: true,
+        centerPadding: "150px",
+        arrows: false,
+        speed: 500,
+        slideToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerPadding: "10px",
+                }
+            },
+        ],
+    }
     return (
         <>
             <Box>

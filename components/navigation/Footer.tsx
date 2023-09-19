@@ -87,10 +87,10 @@ export default function Footer(): JSX.Element {
                                 <SocialBtns label='whatsapp' href='#'>
                                     <Image src={Whatsapp} alt='klosanow whatsapp' />
                                 </SocialBtns>
-                                <SocialBtns label='Linkedin' href='#'>
+                                <SocialBtns label='Linkedin' href='https://www.linkedin.com/company/klosanow/'>
                                     <Image src={Linkedin} alt='klosanow Linkedin' />
                                 </SocialBtns>
-                                <SocialBtns label='Twitter' href='#'>
+                                <SocialBtns label='Twitter' href='https://twitter.com/klosanow'>
                                     <Image src={Twitter} alt='klosanow Twitter' />
                                 </SocialBtns>
                                 <SocialBtns label='Instagram' href='#'>
