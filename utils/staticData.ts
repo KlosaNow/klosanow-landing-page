@@ -58,3 +58,25 @@ export const contactSchema = yup.object().shape({
   email: yup.string().email().required("Email is required"),
   message: yup.string().required("Message is required").max(2500),
 });
+
+
+export const aboutSlide = [
+  {
+    id: 1,
+    img_url: "/images/about/vision.png",
+    title: "Our Vision",
+    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+  },
+  {
+    id: 2,
+    img_url: "/images/about/vision.png",
+    title: "Our Mission",
+    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+  },
+  {
+    id: 3,
+    img_url: "/images/about/vision.png",
+    title: "Our Goal",
+    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+  },
+];

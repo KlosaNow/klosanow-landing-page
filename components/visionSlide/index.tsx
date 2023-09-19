@@ -1,22 +1,38 @@
 
 import React, { useRef } from 'react'
 import { Box, Heading, Text } from '@chakra-ui/react'
-import visionImg from "/public/images/about/vision.png"
 import Image from 'next/image'
 import Slider from "react-slick"
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
+import { aboutSlide } from '@/utils'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+const PrevBtn = ({ onClick }: { onClick: React.MouseEventHandler<HTMLElement> }) => {
+    return (
+        <Box as='button' onClick={onClick}>
+            <ChevronLeftIcon color='primary.50' boxSize={8} />
+        </Box>
+    )
+}
+
+const NextBtn = ({ onClick }: { onClick: React.MouseEventHandler<HTMLElement> }) => {
+    return (
+        <Box as='button' onClick={onClick}>
+            <ChevronRightIcon color='primary.50' boxSize={8} />
+        </Box>
+    )
+}
 
 export default function VisionSlide(): JSX.Element {
 
     const sliderRef = useRef<any>(null)
 
     const settings = {
-        dots: true,
         infinte: true,
-        centerMode: true,
-        centerPadding: "150px",
         arrows: false,
         speed: 500,
-        slideToShow: 2,
+        slideToShow: 1,
         slidesToScroll: 1,
         responsive: [
             {
@@ -31,28 +47,40 @@ export default function VisionSlide(): JSX.Element {
     }
     return (
         <>
-            <Box>
-                <Box bgColor='primary.5' py='4rem' px={{ base: '1rem', md: '8rem' }} borderRadius='20px'
-                    display='flex'
-                    justifyContent='space-between'
-                    alignItems='center'
-                    gap={{ base: '2rem', md: '8rem' }}
-                    flexDirection={{ base: 'column', md: 'row' }}
-                >
-                    <Box>
-                        <Image loading='lazy' src={visionImg} alt='vision' />
-                    </Box>
-                    <Box>
-                        <Heading fontSize={{ base: '3xl', md: '4xl' }} fontWeight={500}
-                            textAlign={{ base: 'center', md: 'right' }} color='black.60'>Our Vision</Heading>
-                        <Text mt='1rem' color='black.50' textAlign={{ base: 'center', md: 'right' }}
-                            lineHeight='144.5%;' width={{ base: '100%', md: '322px' }}>
-                            We aspire to create an online education platform that is designed
-                            to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa
-                        </Text>
-                    </Box>
-                </Box>
+            <Slider {...settings} ref={sliderRef}>
+                {aboutSlide.map((slideItem) => (
+                    <div key={slideItem.id}>
+                        <Box>
+                            <Box bgColor='primary.5' py='4rem' px={{ base: '1rem', md: '8rem' }} borderRadius='20px'
+                                display='flex'
+                                justifyContent='space-between'
+                                alignItems='center'
+                                gap={{ base: '2rem', md: '8rem' }}
+                                flexDirection={{ base: 'column', md: 'row' }}
+                            >
+                                <Box>
+                                    <Image loading='lazy' src={slideItem.img_url} alt='vision' width={687} height={412} />
+                                </Box>
+                                <Box>
+                                    <Heading fontSize={{ base: '3xl', md: '4xl' }} fontWeight={500}
+                                        textAlign={{ base: 'center', md: 'right' }} color='black.60'>{slideItem.title}</Heading>
+                                    <Text mt='1rem' color='black.50' textAlign={{ base: 'center', md: 'right' }}
+                                        lineHeight='144.5%;' width={{ base: '100%', md: '322px' }}>
+                                        {slideItem.desc}
+                                    </Text>
+                                </Box>
+                            </Box>
+                        </Box>
+                    </div>
+                ))}
+
+            </Slider>
+            <Box mt='1.5rem' display='flex' gap='4rem' justifyContent='center' alignItems='center'>
+                <PrevBtn onClick={sliderRef?.current?.slickPrev} />
+                <Box as='span' w='28px' h='5px' borderRadius='50px' bgColor='primary.20'></Box>
+                <NextBtn onClick={sliderRef?.current?.slickNext} />
             </Box>
+
 
         </>
     )
