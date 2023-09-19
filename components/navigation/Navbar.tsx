@@ -33,7 +33,7 @@ const NavLink = ({ children, href, onClose }: NavLinkProps) => {
                 >
                     {children}
                 </Link>
-                {isActive ? <Image src={polygon} alt='polygon' /> : ''}
+                {isActive ? <Image src={polygon} alt='polygon' loading='lazy' /> : ''}
             </Box>
 
         </>
