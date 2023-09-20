@@ -16,7 +16,7 @@ export default function Features() {
                 width='572px'
                 height='572px'
                 border={1}
-                bg={'red.100'}
+                bg={'neutral.30'}
                 borderRadius='50%'
                 top={{ base: '65%', md: '40%' }}
                 zIndex={'-1'}

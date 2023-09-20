@@ -29,7 +29,7 @@ export default function Empower() {
                             </Heading>
                             <Text color={'black.100'}
                                 fontSize={{ base: 'md', md: 'lg' }}
-                                mt={'1rem'} mb='.3rem' fontWeight={500}>
+                                mt={'1rem'} mb='.3rem' fontWeight={400}>
                                 Our online teaching and learning platform is both effective and efficient,
                                 enabling learners access learning contents created by tutors seamlessly
                             </Text>

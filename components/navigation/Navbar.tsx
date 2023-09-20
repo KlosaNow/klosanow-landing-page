@@ -10,22 +10,34 @@ import {
     DrawerCloseButton, DrawerContent, Text, Button
 } from '@chakra-ui/react'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Logo from "@/public/images/general/logo.png"
 import { Links, NavLinkProps, MobileLinks } from '@/utils';
-
+import polygon from "@/public/images/general/polygon.svg"
 
 
 const NavLink = ({ children, href, onClose }: NavLinkProps) => {
+    const pathname = usePathname()
+    const isActive = pathname === href
+
     return (
-        <Link px={2} py={1} rounded='md' color='primary.80'
-            fontWeight={'bold'}
-            href={href} onClick={onClose}
-            _activeLink={{ bg: 'primary.20' }}
-            _hover={{ textDecoration: 'underline' }}
-        >
-            {children}
-        </Link>
+        <>
+            <Box display='flex' flexDir='column' justifyContent='center' alignItems='center' mt='1rem'>
+                <Link
+                    px={2} py={1} rounded='md' color='primary.80'
+                    fontWeight={400}
+                    fontSize='16px'
+                    href={href} onClick={onClose}
+                    _hover={{ textDecoration: 'underline' }}
+                >
+                    {children}
+                </Link>
+                {isActive ? <Image src={polygon} alt='polygon' loading='lazy' /> : ''}
+            </Box>
+
+        </>
+
     )
 }
 export default function Navbar(): JSX.Element {
@@ -51,7 +63,7 @@ export default function Navbar(): JSX.Element {
     return (
         <>
             <Box bg='neutral.50'
-                py='.4rem'
+                py='.5rem'
                 px={{ base: '1rem', md: '6rem' }}
                 zIndex={'200'}
                 top={0}
@@ -87,10 +99,12 @@ export default function Navbar(): JSX.Element {
 
                     <Flex alignItems='center' justifyContent='space-between' gap='4rem'>
                         <Link href='#' display={{ base: 'none', md: 'block' }}>
-                            <Text color='primary.50' fontWeight={500}>Sign-up</Text>
+                            <Text color='primary.50' fontWeight={400}
+                                fontSize='16px'>Sign-up</Text>
                         </Link>
                         <Link href='#' display={{ base: 'none', md: 'block' }}>
-                            <Button bgColor='primary.50' fontWeight={500} color='neutral.50' size='md'>Login</Button>
+                            <Button bgColor='primary.50' fontWeight={400}
+                                fontSize='16px' color='neutral.50' size='md'>Login</Button>
 
                         </Link>
                     </Flex>

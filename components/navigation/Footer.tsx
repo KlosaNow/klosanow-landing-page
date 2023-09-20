@@ -47,7 +47,7 @@ export default function Footer(): JSX.Element {
                         <Box>
                             <Image src={Logo} alt='logo' />
                             <Box width={{ base: '100%', md: '404px' }} mt='2rem'>
-                                <Text color='black.40'>Bridging the Gap Between Learners and Tutors with Our Innovative Product</Text>
+                                <Text color='black.40'>Bridging the Gap Between Learners and Tutors</Text>
                             </Box>
                             <Box mt='3rem'>
                                 <Text color='black.40' fontSize='lg'>© {new Date().getFullYear()} All rights reserved </Text>
@@ -87,10 +87,10 @@ export default function Footer(): JSX.Element {
                                 <SocialBtns label='whatsapp' href='#'>
                                     <Image src={Whatsapp} alt='klosanow whatsapp' />
                                 </SocialBtns>
-                                <SocialBtns label='Linkedin' href='#'>
+                                <SocialBtns label='Linkedin' href='https://www.linkedin.com/company/klosanow/'>
                                     <Image src={Linkedin} alt='klosanow Linkedin' />
                                 </SocialBtns>
-                                <SocialBtns label='Twitter' href='#'>
+                                <SocialBtns label='Twitter' href='https://twitter.com/klosanow'>
                                     <Image src={Twitter} alt='klosanow Twitter' />
                                 </SocialBtns>
                                 <SocialBtns label='Instagram' href='#'>

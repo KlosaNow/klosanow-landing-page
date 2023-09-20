@@ -39,8 +39,8 @@ export default function ContactPage() {
                     <Heading fontSize={{ base: '3xl', md: '4xl' }}
                         textAlign='center' mt='1rem'
                     >
-                        <Text color={'primary.100'} fontWeight={700}>Connect with Us</Text>
-                        <Text textAlign='center' color={'primary.100'} fontWeight={700}>Today</Text>
+                        <Text color={'primary.100'} fontWeight={500}>Connect with Us</Text>
+                        <Text textAlign='center' color={'primary.100'} fontWeight={500}>Today</Text>
                     </Heading>
                     <Box mt={{ base: '1rem', md: '4rem' }}
                         display='flex' gap='12rem' justifyContent='space-between' alignItems='center'>

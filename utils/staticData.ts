@@ -41,15 +41,15 @@ export interface SocialBtnProps {
 export const features = [
   {
     src: "/images/features/pana.png",
-    desc: "Tutors create a video lesson, by verbally explaining the visuals lesson slides while screen recording",
+    desc: "Tutors create a video lesson, by verbally explaining the visuals lesson slides while screen recording.",
   },
   {
     src: "/images/features/cuate.png",
-    desc: "Learners access the video lessons by watching online (On mobile or web) or downloading for offline access",
+    desc: "Learners access the video lessons by watching online  or downloading for offline access.",
   },
   {
     src: "/images/features/amico.png",
-    desc: "Tutors and learners stay connected 24/7 through the messaging feature in our platform (Web and mobile",
+    desc: "Tutors and learners stay connected 24/7 through the messaging feature in our platform.",
   },
 ];
 
@@ -58,3 +58,25 @@ export const contactSchema = yup.object().shape({
   email: yup.string().email().required("Email is required"),
   message: yup.string().required("Message is required").max(2500),
 });
+
+
+export const aboutSlide = [
+  {
+    id: 1,
+    img_url: "/images/about/vision.png",
+    title: "Our Vision",
+    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+  },
+  {
+    id: 2,
+    img_url: "/images/about/vision.png",
+    title: "Our Mission",
+    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+  },
+  {
+    id: 3,
+    img_url: "/images/about/vision.png",
+    title: "Our Goal",
+    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+  },
+];
