@@ -10,9 +10,8 @@ export const MobileLinks = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
-  { title: "LogIn", href: "#" },
+  { title: "LogIn", href: "https://klosanow-frontend.vercel.app" },
 ];
-
 
 export const navFooter = [
   { title: "Home", href: "/" },
@@ -21,8 +20,11 @@ export const navFooter = [
 ];
 
 export const authFooter = [
-  { title: "Login", href: "#" },
-  { title: "Create Account", href: "#" },
+  { title: "Login", href: "https://klosanow-frontend.vercel.app" },
+  {
+    title: "Create Account",
+    href: "https://klosanow-frontend.vercel.app",
+  },
   { title: "Reset Password", href: "#" },
 ];
 
