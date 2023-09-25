@@ -35,10 +35,10 @@ export default function VisionSlide(): JSX.Element {
   const sliderRef = useRef<any>(null);
 
   const settings = {
-    infinite: true,
+    infinte: true,
     arrows: false,
     speed: 500,
-    slidesToShow: 1,
+    slideToShow: 1,
     slidesToScroll: 1,
     responsive: [
       {
@@ -108,9 +108,7 @@ export default function VisionSlide(): JSX.Element {
         justifyContent="center"
         alignItems="center"
       >
-        <Box as="button" onClick={() => sliderRef?.current?.slickPrev()}>
-          <ChevronLeftIcon color="primary.50" boxSize={8} />
-        </Box>
+        <PrevBtn onClick={sliderRef?.current?.slickPrev} />
         <Box
           as="span"
           w="28px"
@@ -118,13 +116,7 @@ export default function VisionSlide(): JSX.Element {
           borderRadius="50px"
           bgColor="primary.20"
         ></Box>
-        <Box as="button" onClick={() => sliderRef?.current?.slickNext()}>
-          <ChevronRightIcon
-            color="primary.50"
-            boxSize={8}
-            onClick={() => sliderRef?.current?.slickNext()}
-          />
-        </Box>
+        <NextBtn onClick={sliderRef?.current?.slickNext} />
       </Box>
     </>
   );
