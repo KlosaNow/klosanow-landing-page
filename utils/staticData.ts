@@ -10,9 +10,8 @@ export const MobileLinks = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
-  { title: "LogIn", href: "#" },
+  { title: "LogIn", href: "https://klosanow-frontend.vercel.app" },
 ];
-
 
 export const navFooter = [
   { title: "Home", href: "/" },
@@ -21,8 +20,11 @@ export const navFooter = [
 ];
 
 export const authFooter = [
-  { title: "Login", href: "#" },
-  { title: "Create Account", href: "#" },
+  { title: "Login", href: "https://klosanow-frontend.vercel.app" },
+  {
+    title: "Create Account",
+    href: "https://klosanow-frontend.vercel.app",
+  },
   { title: "Reset Password", href: "#" },
 ];
 
@@ -65,18 +67,12 @@ export const aboutSlide = [
     id: 1,
     img_url: "/images/about/vision.png",
     title: "Our Vision",
-    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+    desc: " We aspire to create an online education platform that is designed to meet the educational needs of Sub-saharan Africans",
   },
   {
     id: 2,
     img_url: "/images/about/vision.png",
     title: "Our Mission",
-    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
-  },
-  {
-    id: 3,
-    img_url: "/images/about/vision.png",
-    title: "Our Goal",
-    desc: " We aspire to create an online education platform that is designed to meet the diverse and dynamic educational requirements of induvials residing in Sub-Saharan Africa",
+    desc: " We aspire to create an easy to use, flexible and engaging platform where the educational goals of our customers are achieved",
   },
 ];
