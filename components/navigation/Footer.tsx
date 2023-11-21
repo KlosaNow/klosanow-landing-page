@@ -93,7 +93,7 @@ export default function Footer(): JSX.Element {
                                 <SocialBtns label='Twitter' href='https://twitter.com/klosanow'>
                                     <Image src={Twitter} alt='klosanow Twitter' />
                                 </SocialBtns>
-                                <SocialBtns label='Instagram' href='#'>
+                                <SocialBtns label='Instagram' href='https://www.instagram.com/klosanow?igshid=OGQ5ZDc2ODk2ZA%3D%3D'>
                                     <Image src={Instagram} alt='klosanow Instagram' />
                                 </SocialBtns>
                             </Stack>
