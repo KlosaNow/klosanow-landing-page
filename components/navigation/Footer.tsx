@@ -84,9 +84,6 @@ export default function Footer(): JSX.Element {
                         <Box>
                             <Text color='black.40' fontSize='lg'>Follow Us</Text>
                             <Stack direction='row' spacing={2} mt='1.5rem'>
-                                <SocialBtns label='whatsapp' href='#'>
-                                    <Image src={Whatsapp} alt='klosanow whatsapp' />
-                                </SocialBtns>
                                 <SocialBtns label='Linkedin' href='https://www.linkedin.com/company/klosanow/'>
                                     <Image src={Linkedin} alt='klosanow Linkedin' />
                                 </SocialBtns>
