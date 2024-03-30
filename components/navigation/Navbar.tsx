@@ -98,13 +98,13 @@ export default function Navbar(): JSX.Element {
                     </Flex>
 
                     <Flex alignItems='center' justifyContent='space-between' gap='4rem'>
-                        <Link href='https://klosanow-frontend.vercel.app'
+                        <Link href='https://app.klosanow.com'
                             isExternal
                             display={{ base: 'none', md: 'block' }}>
                             <Text color='primary.50' fontWeight={400}
                                 fontSize='16px'>Sign-up</Text>
                         </Link>
-                        <Link href='https://klosanow-frontend.vercel.app'
+                        <Link href='https://app.klosanow.com'
                             isExternal
                             display={{ base: 'none', md: 'block' }}>
                             <Button bgColor='primary.50' fontWeight={400}
