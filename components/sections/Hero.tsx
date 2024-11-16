@@ -118,7 +118,7 @@ export default function Hero(): JSX.Element {
                 community and stay connected 24/7 through the messaging feature
                 on our platform.
               </Text>
-              <Stack
+              {/* <Stack
                 as={motion.div}
                 initial={{ y: 100 }}
                 whileInView={{ y: 0 }}
@@ -160,9 +160,33 @@ export default function Hero(): JSX.Element {
                 >
                   <Link href="#">Watch Demo</Link>
                 </Button>
+              </Stack> */}
+              <Stack
+                as={motion.div}
+                initial={{ y: 100 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: "0.8" }}
+                direction={{ base: "column", md: "row" }}
+                spacing={4}
+              >
+                <Button
+                  size="lg"
+                  bg="primary.50"
+                  color="neutral.50"
+                  px="3rem"
+                  borderRadius="5px"
+                  _hover={{
+                    opacity: 0.8,
+                  }}
+                  fontWeight={400}
+                  fontSize="16px"
+                >
+                  <Link href="#">Join waitlist</Link>
+                </Button>
               </Stack>
             </Stack>
           </Flex>
+
           <Box
             as="div"
             width={"34px"}
