@@ -10,7 +10,8 @@ export const MobileLinks = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
-  { title: "LogIn", href: "https://klosanow-frontend.vercel.app" },
+  { title: "Join waitlist", href: "#" },
+  // { title: "LogIn", href: "https://klosanow-frontend.vercel.app" },
 ];
 
 export const navFooter = [
@@ -19,13 +20,13 @@ export const navFooter = [
   { title: "Contact Us", href: "/contact" },
 ];
 
-export const authFooter = [
-  { title: "Login", href: "https://klosanow-frontend.vercel.app" },
-  {
-    title: "Create Account",
-    href: "https://klosanow-frontend.vercel.app",
-  },
-  { title: "Reset Password", href: "#" },
+export const authFooter: { title: string; href: string }[] | null = [
+  // { title: "Login", href: "https://klosanow-frontend.vercel.app" },
+  // {
+  //   title: "Create Account",
+  //   href: "https://klosanow-frontend.vercel.app",
+  // },
+  // { title: "Reset Password", href: "#" },
 ];
 
 export interface NavLinkProps {
@@ -60,7 +61,6 @@ export const contactSchema = yup.object().shape({
   email: yup.string().email().required("Email is required"),
   message: yup.string().required("Message is required").max(2500),
 });
-
 
 export const aboutSlide = [
   {
