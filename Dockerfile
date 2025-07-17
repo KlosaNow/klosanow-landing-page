@@ -10,7 +10,7 @@ RUN yarn build
 
 FROM node:20.12-alpine3.18 AS runtime
 
-WORKDIR /app
+WORKDIR /src
 
 RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 yarn
 
