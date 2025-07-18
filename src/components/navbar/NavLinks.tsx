@@ -24,6 +24,7 @@ export const NavLinks: React.FC<NavLinkProps> = ({
           width={15}
           height={15}
           priority
+          draggable={false}
         />
       ) : (
         ""

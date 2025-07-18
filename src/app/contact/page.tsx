@@ -19,7 +19,12 @@ const Contact: React.FC = () => (
 
           {/* Contact Image  */}
           <div className="hidden lg:flex">
-            <Image src={contactImg} alt="contact_img" width={300} />
+            <Image
+              src={contactImg}
+              alt="contact_img"
+              width={300}
+              draggable={false}
+            />
           </div>
         </div>
       </div>
