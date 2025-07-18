@@ -46,6 +46,7 @@ export const Empower: React.FC = () => {
                       width={width}
                       height={height}
                       alt="slides"
+                      draggable={false}
                     />
                   </div>
                 </CarouselItem>

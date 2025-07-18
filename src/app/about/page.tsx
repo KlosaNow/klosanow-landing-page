@@ -11,7 +11,7 @@ const About: React.FC = () => (
       <Elispce className="absolute bg-[#FED7D7] w-[300px] h-[300px] md:w-[600px] md:h-[600px] -right-40 md:-right-80 top-64 bottom-0" />
       <div className="relative flex flex-col justify-center items-center max-w-[1000px]">
         <div className="absolute -top-10 -right-30">
-          <Image src={moonImg} alt="moon img" />
+          <Image src={moonImg} alt="moon img" draggable={false} />
         </div>
         <h1 className="font-main text-2xl md:text-4xl text-center">
           Get to Know Us!
@@ -23,11 +23,11 @@ const About: React.FC = () => (
           engaging pre-recorded video lessons, enabling learners to access and
           engage with the content conveniently on our platform, anytime and
           anywhere. Embrace the future of education with Klosanow and embark on
-          a transformative learning experience that transcends traditional
-          boundaries.
+          a transformative teaching and learning experience that transcends
+          traditional boundaries.
         </p>
         <div className="lg:-mt-24">
-          <Image src={stackImg} alt="stack" />
+          <Image src={stackImg} alt="stack" draggable={false} />
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@ const About: React.FC = () => (
         </div>
       </div>
       <div className="max-w-[500px]">
-        <Image src={cultureImg} alt="img" />
+        <Image src={cultureImg} alt="img" draggable={false} />
       </div>
     </div>
   </div>

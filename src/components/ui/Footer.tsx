@@ -44,7 +44,13 @@ export const Footer: React.FC = () => (
           <li key={_i}>
             {" "}
             <Link href={href}>
-              <Image src={url} alt="socialImg" width={width} height={height} />
+              <Image
+                src={url}
+                alt="socialImg"
+                width={width}
+                height={height}
+                draggable={false}
+              />
             </Link>
           </li>
         ))}

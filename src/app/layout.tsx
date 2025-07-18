@@ -4,8 +4,9 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/ui/Footer";
 
 export const metadata: Metadata = {
-  title: "Klosanow",
-  description: "An online education platform for sub-Saharan Africa.",
+  title: "The platform for a seamless online education experience",
+  // description: "",
+  icons: "klosanow-logo.jpg",
 };
 
 export default function RootLayout({
