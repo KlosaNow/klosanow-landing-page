@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { JoinWaitlistButton } from "../ui/JoinWaitlistButton";
+import { ArrowRight } from "lucide-react";
 import { Elispce } from "../ui/Elispce";
 import { heroImg } from "@/assets";
 
@@ -10,40 +10,58 @@ export const Hero: React.FC = () => (
   <div className="flex flex-col max-w-[2024px] justify-center xl:flex-row lg:space-x-40 relative mt-10">
     <Elispce className="absolute w-[400px] h-[400px] border-secondary-thin -z-1 -top-52 -left-70" />
     <motion.div
-      className="relative space-y-5 p-8"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      className="relative space-y-6 p-8"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
     >
-      <h1 className="font-main font-bold text-3xl md:text-4xl w-full lg:max-w-[23ch] leading-10 md:leading-11">
+      {/* Badge pill */}
+      <span className="inline-flex items-center gap-2 bg-[var(--color-primary-5)] text-[var(--color-primary-60)] text-sm font-accent font-semibold px-4 py-1.5 rounded-full">
+        <span className="w-2 h-2 rounded-full bg-[var(--color-primary-50)] animate-pulse" />
+        Online Education, Reimagined
+      </span>
+
+      <h1 className="font-main font-black text-4xl md:text-5xl lg:text-6xl w-full lg:max-w-[18ch] leading-tight">
         Online teaching and learning just got seamless with Klosanow
       </h1>
       <Elispce className="absolute w-[35px] h-[35px] bg-secondary-thin -z-1 top-40 left-[80%] md:left-[96%]" />
-      <p className="font-accent text-xl max-sm:w-full">
+      <p className="font-accent text-lg text-[var(--color-black-50)] max-w-[52ch] leading-relaxed">
         Create engaging video learning content, send it to your learning
         community and stay connected 24/7 through the messaging feature on the
         platform.
       </p>
-      <div className="">
-        <JoinWaitlistButton
-          className="w-44 h-12 px-20 hover:underline"
-          handleButtonClick={() => window.open("https://zc.vg/tav67", "_blank")}
-        />
+
+      <div className="flex items-center gap-4">
+        <button
+          className="btn-primary inline-flex items-center gap-2"
+          onClick={() => window.open("https://zc.vg/tav67", "_blank")}
+        >
+          Join Waitlist <ArrowRight size={16} />
+        </button>
+      </div>
+
+      {/* Stats row */}
+      <div className="flex flex-wrap gap-6 pt-2">
+        {[
+          { value: "500+", label: "Tutors" },
+          { value: "2,000+", label: "Learners" },
+          { value: "Free", label: "To start" },
+        ].map(({ value, label }) => (
+          <div key={label} className="flex flex-col">
+            <span className="font-main font-black text-2xl text-[var(--color-primary-60)]">{value}</span>
+            <span className="font-accent text-sm text-[var(--color-black-50)]">{label}</span>
+          </div>
+        ))}
       </div>
     </motion.div>
 
     <motion.div
-      className="relatve max-sm:mt-10 flex justify-center"
-      whileHover={{ scale: 1.1 }}
-      animate={{
-        scale: [1.1, 1],
-        x: [-100, 0],
-      }}
-      transition={{ duration: 0.5 }}
+      className="relative max-sm:mt-10 flex justify-center"
+      animate={{ scale: [1.05, 1], x: [-60, 0] }}
+      transition={{ duration: 0.6 }}
     >
-      <div className="flex justify-center items-center w-[380px] h-[380px] md:w-[450px] md:h-[450px] bg-secondary-sm rounded-full transition-all duration-500 hover:scale-110">
+      <div className="flex justify-center items-center w-[380px] h-[380px] md:w-[450px] md:h-[450px] bg-secondary-sm rounded-full transition-all duration-500 hover:scale-105">
         <Elispce className="absolute w-[500px] h-[500px] border-secondary-sm -z-1 top-52 -right-52" />
-        {/* <Elispce className="absolute w-[430px] h-[430px] bg-secondary-thin -z-1 top-0 " /> */}
         <Image
           src={heroImg}
           alt="hero"
