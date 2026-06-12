@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { JoinWaitlistButton } from "../ui/JoinWaitlistButton";
 import { Elispce } from "../ui/Elispce";
 import { heroImg } from "@/assets";
 
