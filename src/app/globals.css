@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -7,8 +7,8 @@
 
 :root {
   /* Fonts */
-  --font-main: "Playfair Display", serif;
-  --font-accent: "Encode Sans", sans-serif;
+  --font-main: "Lato", sans-serif;
+  --font-accent: "Lato", sans-serif;
 
   /* === Primary Color Palette === */
   --color-primary-100: #191231;
@@ -117,6 +117,7 @@
 @layer utilities {
   .font-main {
     font-family: var(--font-main);
+    letter-spacing: -0.02em;
   }
   .font-accent {
     font-family: var(--font-accent);
@@ -143,15 +144,15 @@
 }
 
 .btn-primary {
-  @apply bg-[var(--color-primary-50)] text-white px-4 py-2 rounded-sm shadow hover:bg-[var(--color-primary-60)] transition-all duration-500  cursor-pointer;
+  @apply bg-[var(--color-primary-50)] text-white px-6 py-2.5 rounded-lg font-semibold tracking-wide shadow-md hover:bg-[var(--color-primary-60)] hover:shadow-lg transition-all duration-300 cursor-pointer;
 }
 
 .btn-secondary {
-  @apply bg-[var(--color-secondary-10)] text-black px-4 py-2 rounded-md hover:bg-[var(--color-secondary-20)] transition;
+  @apply bg-[var(--color-secondary-10)] text-black px-6 py-2.5 rounded-lg font-semibold hover:bg-[var(--color-secondary-20)] transition;
 }
 
 .btn-success {
-  @apply bg-[var(--color-success-50)] text-white px-4 py-2 rounded-md hover:bg-[var(--color-success-60)] transition;
+  @apply bg-[var(--color-success-50)] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[var(--color-success-60)] transition;
 }
 
 .text-primary {

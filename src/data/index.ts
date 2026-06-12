@@ -129,14 +129,17 @@ export interface SocialBtnProps {
 const features = [
   {
     src: micImg,
+    title: "Create Lessons",
     desc: "Tutors create a video lesson with a desktop, by recording their voice explanations and lesson slides.",
   },
   {
     src: videoIconImg,
-    desc: "Learners access the video lessons by watching online or downoading for offline access through any device.",
+    title: "Watch Anytime",
+    desc: "Learners access the video lessons by watching online or downloading for offline access through any device.",
   },
   {
     src: msgIcon,
+    title: "Stay Connected",
     desc: "Tutors and learners stay connected 24/7 through the study chat feature.",
   },
 ];
